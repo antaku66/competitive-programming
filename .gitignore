@@ -39,3 +39,6 @@
 
 # debug information files
 *.dwo
+
+# IDE specific files
+.claude/settings.local.json
