@@ -1,7 +1,5 @@
 #define INCLUDED_HEADER
 
-/// ---------- ヘッダー ----------
-
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -102,18 +100,3 @@ class Timer {
   double limit_sec_;
   double Elapsed() const { return chrono::duration<double>(clock::now() - start_).count(); }
 };
-
-/// ---------- ライブラリ ----------
-
-/// ---------- 解法 ----------
-
-void Solve() {
-  // ここに解法を実装
-}
-
-/// ---------- メイン関数 ----------
-
-int main() {
-  Solve();
-  return 0;
-}
