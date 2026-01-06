@@ -35,15 +35,6 @@ Install the following extension:
 - **Debug**: `-std=gnu++23 -O2 -g -Wall -Wextra`
 - **Release**: `-std=gnu++23 -O3 -DNDEBUG -Wall -Wextra`
 
-## Debugging
-
-| Action | Shortcut | Description |
-|--------|----------|-------------|
-| Start debugging | `F5` | Debug with GDB |
-| Toggle breakpoint | `F9` | Add/remove breakpoint on line |
-| Step over | `F10` | Go to next line |
-| Step into | `F11` | Step into function |
-
 ## Directory Structure
 
 ```
