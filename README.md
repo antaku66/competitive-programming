@@ -22,24 +22,20 @@ PATH に `C:/msys64/ucrt64/bin` を追加してください。
 
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) (ms-vscode.cpptools)
 
-## ビルド・実行方法
+## ビルド方法
 
-| 操作 | ショートカット | 説明 |
-|------|---------------|------|
-| ビルド＆実行 | `Ctrl+Shift+B` | デフォルトタスク（デバッグビルド後に実行） |
-| ビルドのみ | タスク選択 | C++: Build |
-| リリースビルド＆実行 | タスク選択 | C++: Build & Run (Release) |
-
-### コンパイルオプション
-
-- **デバッグ**: `-std=gnu++23 -O2 -g -Wall -Wextra`
-- **リリース**: `-std=gnu++23 -O3 -DNDEBUG -Wall -Wextra`
+```bash
+g++ -std=gnu++23 -O2 -Wall -Wextra src/main.cpp -o main.exe
+```
 
 ## ディレクトリ構成
 
-```
+```text
 src/
   main.cpp      # メインソースファイル（テンプレート）
+  header.hpp    # 共通ヘッダ（マクロ・型定義）
+  algorithm/    # アルゴリズム用ライブラリ
+  heuristic/    # ヒューリスティック用ライブラリ
 .vscode/        # VS Code 設定
 .clang-format   # コードフォーマット設定（Google スタイル）
 ```
